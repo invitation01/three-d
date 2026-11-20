@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111411"><title>Photo and Video Albums</title><link rel="stylesheet" href="style.css"><script src="albums.js" defer></script><script src="script.js" defer></script></head>
+<body>
+<main>
+<section id="albums" class="albums" aria-label="Albums"></section>
+<section id="gallery" hidden><div class="gallery-head"><div><h2 id="gallery-title"></h2><p id="count"></p></div><button id="back" class="button">← All albums</button></div><div id="photos" class="photos"></div><p id="empty" class="empty" hidden>This album is empty.</p></section>
+</main>
+<dialog id="viewer"><div class="viewer-bar"><span id="position" aria-live="polite"></span><button id="close" aria-label="Close">✕</button></div><button id="prev" class="arrow previous" aria-label="Previous item">❮</button><img id="large" alt=""><video id="movie" controls playsinline hidden></video><button id="next" class="arrow next" aria-label="Next item">❯</button><p id="caption"></p></dialog>
+</body></html>
+
